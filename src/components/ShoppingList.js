@@ -8,11 +8,20 @@ function ShoppingList() {
     )
 
     return (
-        <ul>
-            {plantList.map((x, index) => (
-                <li key={`${x}-${index}`}>{x}</li>
+        <div>
+   <ul>
+           {categories.map((x)=>(
+            <li key={x}>{x}</li>
+           ))}
+        </ul>
+        <ul className="plant-list">
+            {plantList.map((x) =>(
+<li key={x.id} className='plant-item'>{x.name}
+{x.isSpecialOffer && <div className='sales'>Soldes</div>}</li>
             ))}
         </ul>
+        </div>
+     
     )
 }
 
