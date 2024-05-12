@@ -3,6 +3,8 @@ import logo from '../assets/logo.png'
 import Banner from '../components/Banner'
 // import Cart from '../components/Cart'
 import ShoppingList from './ShoppingList';
+import Footer from './Footer';
+
 
 function App() {
   return (
@@ -13,6 +15,8 @@ function App() {
     </Banner>
   {/* <Cart/> */}
   <ShoppingList/>
+  <Footer/>
+
   </React.Fragment>
 
    
