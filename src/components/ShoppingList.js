@@ -2,7 +2,7 @@ import { plantList } from '../datas/plantList'
 import PlantItem from './plantItem'
 import '../styles/ShoppingList.css'
 import Categories from './Categories'
-import { useState } from 'react'
+import { useState} from 'react'
 
 function ShoppingList({ cart, updateCart }) {
 	const [activeCategory, setActiveCategory] = useState('')
@@ -24,6 +24,8 @@ function addToCart(name,price){
 	updateCart([...cart, {name,price,amount:1}])
    }
 	 }  
+
+	
 
 	return (
 		<div className='lmj-shopping-list'>
